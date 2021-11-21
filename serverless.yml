@@ -1,0 +1,14 @@
+#
+service: my-chatbot
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-west-2
+
+
+
+functions:
+  getTodaysWeather:
+    handler: handler.getTodaysWeather
